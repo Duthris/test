@@ -1,0 +1,40 @@
+{
+    "ownerIDS": [process.env.DuthisID],
+    "default_cooldown_in_sec" : 1.5,
+    "antiCrash": true,
+    "ping_message": true,
+    "delete_commands": true,
+    "somethingwentwrong_cmd": true,
+
+    "messages": {
+        "ping_message": "",
+        "cooldown": "❌ `%{commandname}%` komutunu tekrar kullanmak için %{timeleft}% saniye bekle!",
+        "notallowed_to_exec_cmd": {
+            "title": "❌ Bu komutu kullanmaya yetkin yok!",
+            "description": {
+                "memberpermissions": "Bu komutu kullanmak için şu izinlere ihtiyacın var:\n> %{commandmemberpermissions}%",
+                "alloweduserids": "Bu komutu kullanmak için şu kullanıcılardan birisi olman gerekli:\n> %{commandalloweduserids}%",
+                "requiredroles": "Bu komutu kullanmak için bu rollerden birine sahip olman gerekli:\n> %{commandrequiredroles}%",
+                "default": "Gerekli iznin olduğundan emin ol!"
+            }
+        },
+        "somethingwentwrong_cmd": {
+            "title": "❌ `%{commandname}%` komutunu kullanırken beklenmedik bir hata oluştu!",
+            "description": "```%{errormessage}%```"
+        },
+        "unknown_cmd": "❌ Geçersiz Komut!",
+        "error_occur": "❌ Bir hata meydana geldi!",
+        "error_occur_desc": "````%{errorstack}%````"
+    },
+    "timeout": {
+        "notallowed_to_exec_cmd": {
+            "memberpermissions": 4500,
+            "alloweduserids": 3500,
+            "requiredroles": 3500
+        },
+        "minargs": 3000,
+        "maxargs": 3000,
+        "minplusargs": 3000,
+        "maxplusargs": 3000
+    }
+}

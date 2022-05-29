@@ -1,0 +1,18 @@
+{
+  "prefix": "+",
+  "loadSlashsGlobal": false,
+  "slashCommandsDirs": [
+        {
+                "Folder": "Info",
+                "CmdName": "info",
+                "CmdDescription": "Info about smth!"
+        },
+        {
+                "Folder": "Admin",
+                "CmdName": "admin",
+                "CmdDescription": "Server adminstrate!"
+        }
+   ],
+
+   "Database": process.env.DATABASE
+}
